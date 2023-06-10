@@ -15,9 +15,9 @@ My coursework for 2nd college grade. The task was to create a software with mode
 - Windows 10 / 11
 
 ## ✔️ **Getting started**
-Download [the project](https://github.com/andrewchokh/password-generator.git), build it up in `Visual Studio` and run.
+Download [the project](https://github.com/andrewchokh/file-compressor.git), build it up in `Visual Studio` and run.
 
 ## 📃 **How to use**
-When you start the program, you will see the main window. There you can generate passwords with different security levels. You can choose how long password will be, will there be numbers, symbols, choose lower- or uppper- cases, will there be identical characters.
+You can select a file and compress (or decompress) it with several compression algorithms. It's important to select an algorithm carefully, because it works effectively in very different situations. Also, there are a few adjustments for better user experience (theme, language etc.).
 
-<p align="center"><img src="https://user-images.githubusercontent.com/88233242/230658881-0225afe3-ab86-46ec-b115-fc8d099992e1.png" /></p>
+<p align="center"><img src="https://github.com/andrewchokh/file-compressor/assets/88233242/fe5dcf16-4adb-498c-bd65-425ce7b73d3d" /></p>
