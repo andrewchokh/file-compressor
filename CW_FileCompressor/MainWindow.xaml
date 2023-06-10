@@ -1,0 +1,66 @@
+﻿<Window x:Class="CW_FileCompressor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CW_FileCompressor"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:language="clr-namespace:CW_FileCompressor.Properties.Langs"
+        mc:Ignorable="d"
+        Title="{x:Static language:Lang.FileCompressor}" Width="650" Height="400" 
+        Background="{StaticResource PrimaryMidBrush}" Icon="Icon.ico" 
+        Activated="MainWindow_Activated">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="128"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Grid.RowSpan="4" Background="{StaticResource SecondaryDarkBrush}" CornerRadius="0,3,3,0" />
+
+        <DockPanel>
+            <Border CornerRadius="5" Background="{StaticResource PrimaryDarkBrush}" Width="32" Height="32" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" DockPanel.Dock="Left">
+                <Image Grid.Column="0" Grid.Row="0" Source="/Images/no_profile_pic.png"   Margin="3" UseLayoutRounding="True" />
+            </Border>
+            <TextBlock x:Name="tblUsername" Text="Username" HorizontalAlignment="Center" FontSize="14" Foreground="White" Margin="10" DockPanel.Dock="Right"/>
+        </DockPanel>
+
+        <ScrollViewer Grid.Column="0" Grid.Row="1" Grid.RowSpan="4" Margin="5 0 0 0">
+            <StackPanel x:Name="stpSidePanel" Grid.Column="0" Grid.Row="1" Grid.RowSpan="4" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock/>
+                <StackPanel x:Name="stpLibraries">
+                    <TextBlock Text="{x:Static language:Lang.FoldersLabel}" Foreground="{StaticResource PrimaryMidBrush}" FontWeight="Bold" FontSize="8"/>
+                </StackPanel>
+                <TextBlock/>
+                <StackPanel x:Name="stpDisks">
+                    <TextBlock Text="{x:Static language:Lang.DisksLabel}" Foreground="{StaticResource PrimaryMidBrush}" FontWeight="Bold" FontSize="8" />
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <WrapPanel x:Name="wrpActionButtons" Grid.Column="1" Grid.Row="0" />
+
+        <DockPanel Grid.Column="1" Grid.Row="1" Margin="10 0 10 0">
+            <Button x:Name="btnBack" Content="{x:Static language:Lang.BackLabel}" DockPanel.Dock="Left" MinWidth="60" Style="{StaticResource CustomMaterialDesignFlatButton}" Click="btnBack_Click" />
+            <Button x:Name="btnSelect" Content="{x:Static language:Lang.SelectLabel}" DockPanel.Dock="Right" MinWidth="70" Style="{StaticResource CustomMaterialDesignFlatButton}" Click="btnSelect_Click" />
+            <TextBox x:Name="tbxPath" Margin="5 0 5 0" FontSize="16" IsReadOnly="True" Style="{StaticResource CustomMaterialDesignTextBox}" />
+        </DockPanel>
+
+        <Border Grid.Column="1" Grid.Row="2" Background="{StaticResource PrimaryLightBrush}" CornerRadius="3" Margin="10" BorderBrush="{StaticResource SecondaryLightBrush}" BorderThickness="2" >
+            <ListView x:Name="lsvExplorerPath" MouseDoubleClick="lsvExplorerPath_MouseDoubleClick" SelectionChanged="lsvExplorerPath_SelectionChanged" Foreground="{StaticResource AccentMidBrush}"/>
+        </Border>
+
+        <Border Grid.Column="1" Grid.Row="3" Background="{StaticResource PrimaryDarkBrush}">
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3" Margin="10 0 10 0" VerticalAlignment="Center">
+                <TextBlock x:Name="tblItemsCount" Text="{x:Static language:Lang.ElementsLabel}" Foreground="{StaticResource AccentMidBrush}" />
+                <TextBlock Text="|" Grid.Column="1" Margin="5 0 5 0" Foreground="{StaticResource AccentMidBrush}" />
+                <TextBlock x:Name="tblFileSize" Text="{x:Static language:Lang.FileSizeLabel}" Foreground="{StaticResource AccentMidBrush}" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

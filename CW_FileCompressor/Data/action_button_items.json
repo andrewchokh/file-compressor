@@ -1,0 +1,26 @@
+﻿[
+  {
+    "content": "Compress",
+    "name": "Compress",
+    "icon_id": 5216,
+    "button_id": 0
+  },
+  {
+    "name": "Decompress",
+    "content": "Decompress",
+    "icon_id": 4504,
+    "button_id": 1
+  },
+  {
+    "name": "About",
+    "content": "About",
+    "icon_id": 3685,
+    "button_id": 2
+  },
+  {
+    "name": "Settings",
+    "content": "Settings",
+    "icon_id": 1970,
+    "button_id": 3
+  }
+]

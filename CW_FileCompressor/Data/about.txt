@@ -1,0 +1,11 @@
+Welcome to the simple file compressor. There's a describe for every function that you can use:
+
+- "Compress" button compresses selected file;
+
+- "Decompress" button decompresses selected files;
+
+- "About" button shows you short manual;
+
+- "Settings" button lets you change app language and theme;
+
+Enjoy using!

@@ -1,0 +1,56 @@
+﻿[
+  {
+    "content": "Desktop",
+    "name": "Desktop",
+    "icon_id": 3071,
+    "category_index": 0
+  },
+  {
+    "name": "Documents",
+    "content": "Documents",
+    "icon_id": 3071,
+    "category_index": 0
+  },
+  {
+    "name": "Downloads",
+    "content": "Downloads",
+    "icon_id": 3071,
+    "category_index": 0
+  },
+  {
+    "name": "Pictures",
+    "content": "Pictures",
+    "icon_id": 3071,
+    "category_index": 0
+  },
+  {
+    "name": "Videos",
+    "content": "Videos",
+    "icon_id": 3071,
+    "category_index": 0
+  },
+  {
+    "name": "Music",
+    "content": "Music",
+    "icon_id": 3071,
+    "category_index": 0
+  },
+  {
+    "name": "DiskC",
+    "content": "Local Disk (C:)",
+    "icon_id": 3071,
+    "category_index": 1
+  },
+  {
+    "name": "DiskD",
+    "content": "Local Disk (D:)",
+    "icon_id": 3071,
+    "category_index": 1
+  },
+  {
+    "name": "DiskE",
+    "content": "Local Disk (E:)",
+    "icon_id": 3071,
+    "category_index": 1
+  }
+]
